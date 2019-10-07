@@ -6,6 +6,7 @@ WpfWindow("Micro Focus MyFlight Sample").WpfButton("OK").Click @@ hightlight id_
 
 If WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGHTS").Exist(3) Then
 	
+	WpfWindow("Micro Focus MyFlight Sample").Close
 	Login_Status = "LogIn is done Successfully"
 	else
 	Login_Status = "LogIn is Fail"
@@ -14,4 +15,4 @@ End If
 msgBox Login_Status
 
 
-WpfWindow("Micro Focus MyFlight Sample").Close @@ hightlight id_;_722060_;_script infofile_;_ZIP::ssf6.xml_;_
+ @@ hightlight id_;_722060_;_script infofile_;_ZIP::ssf6.xml_;_
