@@ -6,7 +6,7 @@ WpfWindow("Micro Focus MyFlight Sample").WpfButton("OK").Click @@ hightlight id_
 
 If WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGHTS").Exist(3) Then
 	
-	Login_Status = "LogIn is Successful"
+	Login_Status = "LogIn is done Successfully"
 	else
 	Login_Status = "LogIn is Fail"
 End If
