@@ -6,10 +6,11 @@ WpfWindow("Micro Focus MyFlight Sample").WpfButton("OK").Click @@ hightlight id_
 
 If WpfWindow("Micro Focus MyFlight Sample").Dialog("Login Failed").Exist(5) Then
    WpfWindow("Micro Focus MyFlight Sample").Dialog("Login Failed").WinButton("OK").Click
-   
+   Reporter.ReportEvent micFail , "Invalid Login" ,"Invalid due to invalid Password"
 	
 Else @@ hightlight id_;_1574412_;_script infofile_;_ZIP::ssf9.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").Close @@ hightlight id_;_1377402_;_script infofile_;_ZIP::ssf11.xml_;_
+Reporter.ReportEvent micPass , "Valid Login" , "Valid Due to Valid Credentials"
 
 End If
  @@ hightlight id_;_132756_;_script infofile_;_ZIP::ssf6.xml_;_
