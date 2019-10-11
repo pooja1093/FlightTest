@@ -27,10 +27,7 @@ If Browser("Certificate Error: Navigation").Page("Privileged Account Management_
 	'reporter.ReportEvent micFail , "Login is Fail" , "Due to invalid Credentials" @@ hightlight id_;_264566_;_script infofile_;_ZIP::ssf44.xml_;_
 	
 	'SystemUtil.CloseDescendentProcesses ' this will close window of ie
-	
-	
-End If
-
+End If @@ hightlight id_;_65866_;_script infofile_;_ZIP::ssf53.xml_;_
 'var_GetROProperty = Browser("Certificate Error: Navigation").WinObject("Client Caption").GetROProperty("text")
 
 
