@@ -1,10 +1,10 @@
 ﻿ @@ hightlight id_;_Browser("Certificate Error: Navigation").Page("Privileged Account Management").WebEdit("ctl00$MainContent$txtpassword")_;_script infofile_;_ZIP::ssf32.xml_;_
- Dim LRowCount
+ Dim LRowCount,i
  
  
- DataTable.AddSheet"Login"
+ DataTable.AddSheet"ArconnTestData"
  DataTable.ImportSheet "C:\Users\Pooja.Thul\Desktop\TestData\ArconnTestData.xls",1,3
- LRowCount = datatable.GetSheet("ArconnTestData").GetRowCount
+ LRowCount = datatable.GetSheet(3).GetRowCount
  
  Browser("Certificate Error: Navigation").Page("Certificate Error: Navigation").Link("Continue to this website").Click
  
@@ -27,4 +27,4 @@ If Browser("Certificate Error: Navigation").Page("Privileged Account Management_
 	reporter.ReportEvent micFail , "Login is Fail" , "Due to invalid Credentials"
 End If
 
-
+Next
