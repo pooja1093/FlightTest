@@ -1,15 +1,13 @@
-﻿ @@ hightlight id_;_Browser("Certificate Error: Navigation").Page("Privileged Account Management").WebEdit("ctl00$MainContent$txtpassword")_;_script infofile_;_ZIP::ssf32.xml_;_
- Dim LRowCount,i
- 
+﻿Dim LRowCount,i
  
  DataTable.AddSheet"ArconnTestData"
+ 						
  DataTable.ImportSheet "C:\Users\Pooja.Thul\Desktop\TestData\ArconnTestData.xls",1,3
  LRowCount = datatable.GetSheet(3).GetRowCount
  
  Browser("Certificate Error: Navigation").Page("Certificate Error: Navigation").Link("Continue to this website").Click
  
 For i = 1 To LRowCount Step 1
- 
 datatable.SetCurrentRow(i)
  @@ hightlight id_;_Browser("Certificate Error: Navigation").Page("Certificate Error: Navigation").Link("Continue to this website")_;_script infofile_;_ZIP::ssf33.xml_;_
 Browser("Certificate Error: Navigation").Page("Privileged Account Management").WebEdit("ctl00$MainContent$txtusername").Set datatable(1,3) @@ hightlight id_;_Browser("Certificate Error: Navigation").Page("Privileged Account Management").WebEdit("ctl00$MainContent$txtusername")_;_script infofile_;_ZIP::ssf34.xml_;_
@@ -25,14 +23,18 @@ If Browser("Certificate Error: Navigation").Page("Privileged Account Management_
 	Else
 	'systemutil.CloseDescendentProcesses
 	'reporter.ReportEvent micFail , "Login is Fail" , "Due to invalid Credentials" @@ hightlight id_;_264566_;_script infofile_;_ZIP::ssf44.xml_;_
-	
 	'SystemUtil.CloseDescendentProcesses ' this will close window of ie
+	
+Browser("Certificate Error: Navigation").Page("Privileged Account Management").WebButton("×").Click
  @@ hightlight id_;_65866_;_script infofile_;_ZIP::ssf54.xml_;_
 End If @@ hightlight id_;_65866_;_script infofile_;_ZIP::ssf53.xml_;_
 'var_GetROProperty = Browser("Certificate Error: Navigation").WinObject("Client Caption").GetROProperty("text")
 
 
 Next
+
+
+ @@ hightlight id_;_Browser("Certificate Error: Navigation").Page("Privileged Account Management").WebButton("×")_;_script infofile_;_ZIP::ssf61.xml_;_
 
 
 
