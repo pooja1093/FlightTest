@@ -6,5 +6,5 @@ WpfWindow("Micro Focus MyFlight Sample").WpfEdit("password").SetSecure "5d9ae474
 WpfWindow("Micro Focus MyFlight Sample").WpfButton("OK").Click @@ hightlight id_;_1928783560_;_script infofile_;_ZIP::ssf3.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("fromCity").Select "Denver" @@ hightlight id_;_1993980320_;_script infofile_;_ZIP::ssf5.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("toCity").Select "Sydney" @@ hightlight id_;_1993949120_;_script infofile_;_ZIP::ssf7.xml_;_
-WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGHTS").Click @@ hightlight id_;_1993950464_;_script infofile_;_ZIP::ssf8.xml_;_
+WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGH").Click @@ hightlight id_;_1993950464_;_script infofile_;_ZIP::ssf8.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").Close
